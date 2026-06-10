@@ -1,0 +1,188 @@
+prefix: "&#2fd9ff&lP&#4fdfff&lL&#6fe5ff&lO&#8febff&lT&#aff1ff&lR&#cff7ff&lO&#effdff&lP&#ffffff&lO&#ffffff&lL&#ffffff&lI&#ffffff&lS &f&l» &7"
+
+mysql:
+  host: "51.75.69.56"
+  port: 3306
+  database: "Globalisierung"
+  username: "plotropolis_global"
+  password: "gmHDJ.mb4MG:ZgJ"
+  useSSL: false
+  poolSize: 10
+  table: "plotropolis_jobs"
+
+settings:
+  allowed-worlds:
+    - "world"
+
+  payout-interval-seconds: 60
+  bossbar:
+    enabled: true
+    remove-after-seconds: 5
+    color: "CYAN"
+    style: "SOLID"
+
+  ignore-creative: true
+  ignore-silk-touch: false
+
+progression:
+  max-level: 200
+  xp-step: 1000
+  coins-per-3-levels: 0.5
+  base-coins: 0.5
+
+gui:
+  title: "&#2fd9ff&lP&#4fdfff&lL&#6fe5ff&lO&#8febff&lT&#aff1ff&lR&#cff7ff&lO&#effdff&lP&#ffffff&lO&#ffffff&lL&#ffffff&lI&#ffffff&lS &8| &fJobs"
+  rows: 6
+
+  decor:
+    background: "GRAY_STAINED_GLASS_PANE"
+    filler: "GRAY_STAINED_GLASS_PANE"
+    border: "BLACK_STAINED_GLASS_PANE"
+    header: "GRAY_STAINED_GLASS_PANE"
+    empty-name: " "
+
+  buttons:
+    info:
+      slot: 4
+      material: "PLAYER_HEAD"
+      name: "&#2fd9ff&lDein Profil"
+      lore:
+        - "&7Alle Jobs sind &aaktiv&7."
+        - "&7Auszahlung: &falle &b{payout}s"
+        - ""
+        - "&7Belohnungen nur in:"
+        - "&bFarmwelt_Normal"
+        - "&bFarmwelt_Nether"
+        - "&bFarmwelt_End"
+        - "&bworld"
+
+    close:
+      slot: 49
+      material: "BARRIER"
+      name: "&c&lSchließen"
+      lore:
+        - "&7Menü schließen"
+
+  cards:
+    miner:
+      icon: "DIAMOND_PICKAXE"
+      name: "&b&lMiner"
+      desc:
+        - "&7Erze & Stein abbauen"
+
+    woodcutter:
+      icon: "DIAMOND_AXE"
+      name: "&a&lHolzfäller"
+      desc:
+        - "&7Stämme fällen"
+
+    hunter:
+      icon: "BOW"
+      name: "&c&lJäger"
+      desc:
+        - "&7Mobs jagen"
+
+    digger:
+      icon: "DIAMOND_SHOVEL"
+      name: "&e&lGräber"
+      desc:
+        - "&7Sand/Dirt/Kies"
+
+    fisher:
+      icon: "FISHING_ROD"
+      name: "&9&lFischer"
+      desc:
+        - "&7Angeln"
+
+  details:
+    title: "&8Job &fDetails"
+    rows: 5
+    decor:
+      border: "BLACK_STAINED_GLASS_PANE"
+      header: "GRAY_STAINED_GLASS_PANE"
+      filler: "GRAY_STAINED_GLASS_PANE"
+      empty-name: " "
+
+    back:
+      slot: 36
+      material: "ARROW"
+      name: "&7Zurück"
+      lore:
+        - "&7Zur Übersicht"
+
+    card:
+      slot: 22
+      material: "BOOK"
+      name: "&fFortschritt"
+      lore:
+        - "&7Job: &f{job}"
+        - "&7Level: {color}{level}"
+        - "&7XP: {color}{xp}&7/&f{need}"
+        - "{color}{bar} &7{percent}%"
+        - ""
+        - "&7Coins pro Action: &a{coins}"
+        - "&7Auszahlung: &a+{session}"
+        - ""
+        - "&8Auszahlung alle &f{payout}s"
+
+jobs:
+  miner:
+    enabled: true
+    xp:
+      STONE: 10
+      COAL_ORE: 5
+      DEEPSLATE_COAL_ORE: 5
+      IRON_ORE: 20
+      DEEPSLATE_IRON_ORE: 20
+      GOLD_ORE: 10
+      DEEPSLATE_GOLD_ORE: 10
+      REDSTONE_ORE: 10
+      DEEPSLATE_REDSTONE_ORE: 10
+      LAPIS_ORE: 10
+      DEEPSLATE_LAPIS_ORE: 10
+      DIAMOND_ORE: 50
+      DEEPSLATE_DIAMOND_ORE: 50
+      NETHER_QUARTZ_ORE: 5
+
+  woodcutter:
+    enabled: true
+    default-xp: 0
+    xp:
+      OAK_LOG: 10
+      BIRCH_LOG: 10
+      DARK_OAK_LOG: 15
+      SPRUCE_LOG: 10
+      JUNGLE_LOG: 20
+      ACACIA_LOG: 15
+      MANGROVE_LOG: 15
+      CHERRY_LOG: 15
+      PALE_OAK_LOG: 15
+      CRIMSON_STEM: 15
+      WARPED_STEM: 15
+
+  hunter:
+    enabled: true
+    xp:
+      ZOMBIE: 10
+      SKELETON: 15
+      BOGGED: 15
+      CAVE_SPIDER: 20
+      CREEPER: 20
+      ENDERMAN: 25
+      GHAST: 15
+      PHANTOM: 30
+      PIGLIN: 10
+      PIGLIN_BRUTE: 10
+      ZOMBIFIED_PIGLIN: 10
+
+  digger:
+    enabled: true
+    xp:
+      SAND: 10
+      DIRT: 5
+      GRAVEL: 10
+      GRASS_BLOCK: 5
+
+  fisher:
+    enabled: true
+    xp-per-catch: 30

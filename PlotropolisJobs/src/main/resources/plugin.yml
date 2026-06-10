@@ -1,0 +1,33 @@
+name: PlotropolisJobs
+version: 1.0.0
+main: de.plotropolis.jobs.PlotropolisJobs
+api-version: 1.21
+author: JustMusho
+commands:
+  jobs:
+    description: Öffnet das Plotropolis Jobs GUI
+    usage: /jobs
+permissions:
+  plotropolisjobs.command.jobs:
+    default: true
+  plotropolisjobs.command.reload:
+    default: op
+
+  plotropolisjobs.gui.open:
+    default: true
+  plotropolisjobs.gui.click:
+    default: true
+
+  plotropolisjobs.bossbar:
+    default: true
+
+  plotropolisjobs.job.miner:
+    default: true
+  plotropolisjobs.job.woodcutter:
+    default: true
+  plotropolisjobs.job.hunter:
+    default: true
+  plotropolisjobs.job.digger:
+    default: true
+  plotropolisjobs.job.fisher:
+    default: true
