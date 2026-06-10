@@ -1,0 +1,52 @@
+name: PlotropolisClan
+version: 1.0.0
+main: de.plotropolis.clan.PlotropolisClan
+api-version: 1.21
+author: JustMusho
+depend: [PlotropolisCoins, PlotropolisBoard]
+softdepend: [PlaceholderAPI]
+
+commands:
+  clan:
+    description: Clan-System
+    usage: /clan help
+    aliases: [team, clans]
+
+permissions:
+  plotropolisclan.*:
+    default: op
+    children:
+      plotropolisclan.user: true
+      plotropolisclan.admin: true
+
+  plotropolisclan.user:
+    default: true
+
+  plotropolisclan.admin:
+    default: op
+
+  plotropolisclan.cmd.help: {default: true}
+  plotropolisclan.cmd.create: {default: true}
+  plotropolisclan.cmd.delete: {default: true}
+  plotropolisclan.cmd.info: {default: true}
+  plotropolisclan.cmd.join: {default: true}
+  plotropolisclan.cmd.invite: {default: true}
+  plotropolisclan.cmd.invites: {default: true}
+  plotropolisclan.cmd.invite.accept: {default: true}
+  plotropolisclan.cmd.invite.deny: {default: true}
+  plotropolisclan.cmd.kick: {default: true}
+  plotropolisclan.cmd.members: {default: true}
+  plotropolisclan.cmd.top: {default: true}
+  plotropolisclan.cmd.bank.deposit: {default: true}
+  plotropolisclan.cmd.bank.withdraw: {default: true}
+  plotropolisclan.cmd.bank.info: {default: true}
+  plotropolisclan.cmd.activity: {default: true}
+  plotropolisclan.cmd.role.create: {default: true}
+  plotropolisclan.cmd.role.delete: {default: true}
+  plotropolisclan.cmd.role.perms: {default: true}
+  plotropolisclan.cmd.role.set: {default: true}
+
+  plotropolisclan.admin.verify: {default: op}
+  plotropolisclan.admin.delete: {default: op}
+  plotropolisclan.admin.bank.set: {default: op}
+  plotropolisclan.admin.kick: {default: op}

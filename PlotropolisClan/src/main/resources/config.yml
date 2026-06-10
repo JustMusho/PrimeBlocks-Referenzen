@@ -1,0 +1,94 @@
+prefix: "&#2fd9ff&lP&#4fdfff&lL&#6fe5ff&lO&#8febff&lT&#aff1ff&lR&#cff7ff&lO&#effdff&lP&#ffffff&lO&#ffffff&lL&#ffffff&lI&#ffffff&lS &f&l» &7"
+
+storage:
+  type: "MYSQL"
+
+network:
+  server-id: "cb1"
+
+sync:
+  refresh-seconds: 10
+
+mysql:
+  host: "51.75.69.56"
+  port: 3306
+  database: "Globalisierung"
+  username: "plotropolis_global"
+  password: "gmHDJ.mb4MG:ZgJ"
+  useSSL: false
+  poolSize: 10
+  table: "plotropolis_clan"
+
+settings:
+  tag-max-length: 5
+  create-cost: 250000
+
+  require-unique-tag: true
+  require-unique-name: true
+
+  clan-tags:
+    enabled: true
+
+    mode: "SUFFIX"
+    space-before-tag: true
+
+    rank-team-prefixes:
+      - "pr"
+
+    verified-format: "&f[&b{tag}&f]"
+
+  join:
+    default-open: false
+    allow-public-join-toggle: true
+
+verification:
+  required:
+    last-days: 14
+    activity-hours: 100
+    kills: 500
+    bank-money: 1000000
+
+gui:
+  members:
+    title: "&#2fd9ffClan &#ffffffMitglieder"
+    size: 54
+  roles:
+    title: "&#2fd9ffClan &#ffffffRollen"
+    size: 54
+  role-perms:
+    title: "&#2fd9ffRollen &#ffffffPermissions"
+    size: 54
+
+messages:
+  no-permission: "&cDafür hast du keine Permission."
+  only-player: "&cNur Spieler können das benutzen."
+  not-in-clan: "&cDu bist in keinem Clan."
+  already-in-clan: "&cDu bist bereits in einem Clan."
+  clan-not-found: "&cClan nicht gefunden."
+  invalid-tag: "&cUngültiger TAG. Max {max} Zeichen."
+  tag-taken: "&cDieser TAG ist bereits vergeben."
+  name-taken: "&cDieser Clan-Name ist bereits vergeben."
+  create-success: "&aClan erstellt: &f[{tag}] {name} &7(-{cost})"
+  create-not-enough: "&cDu hast nicht genug Geld. Benötigt: &f{cost}"
+  delete-success: "&aClan gelöscht."
+  delete-only-owner: "&cNur der Clan-Anführer kann das."
+  invite-sent: "&aEinladung gesendet an &f{player}&a."
+  invite-received: "&eDu wurdest in den Clan &f[{tag}] {name}&e eingeladen. Nutze: &f/clan einladung annehmen {tag}"
+  invite-none: "&7Du hast keine Einladungen."
+  invite-accepted: "&aDu bist dem Clan &f[{tag}] {name}&a beigetreten."
+  invite-denied: "&7Einladung abgelehnt."
+  invite-already: "&cDieser Spieler hat bereits eine offene Einladung."
+  join-closed: "&cDieser Clan ist nicht öffentlich. Du brauchst eine Einladung."
+  join-success: "&aDu bist dem Clan &f[{tag}] {name}&a beigetreten."
+  kick-success: "&aSpieler gekickt: &f{player}"
+  bank-info: "&7Clan-Bank: &f{bank}"
+  bank-deposit-success: "&aEingezahlt: &f{amount}"
+  bank-withdraw-success: "&aAusgezahlt: &f{amount}"
+  bank-not-enough: "&cNicht genug Clan-Geld."
+  bank-no-rights: "&cDu darfst nicht auszahlen."
+  role-created: "&aRolle erstellt: &f{role}"
+  role-deleted: "&aRolle gelöscht: &f{role}"
+  role-not-found: "&cRolle nicht gefunden."
+  role-set: "&aRolle gesetzt: &f{role} &7-> &f{player}"
+  top-header: "&bTop 10 Clans (Bank)"
+  verified-now: "&aClan &f[{tag}] {name} &awurde verifiziert!"
