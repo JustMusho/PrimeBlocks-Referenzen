@@ -1,0 +1,64 @@
+prefix: "&#2fd9ff&lP&#4fdfff&lL&#6fe5ff&lO&#8febff&lT&#aff1ff&lR&#cff7ff&lO&#effdff&lP&#ffffff&lO&#ffffff&lL&#ffffff&lI&#ffffff&lS &f&l» &7"
+
+settings:
+  click-mode: "RIGHT_BUY_LEFT_SELL"
+
+  owner-can-trade: false
+  detect-item-mode: "FIRST_NON_AIR"
+  require-attached-sign: true
+  target-distance: 6
+
+hologram:
+  enabled: true
+  permission: "plotropolis.chestshop.hologram"
+
+  tick-interval: 10
+  raytrace-distance: 6.0
+  y-offset: 1.25
+
+  item:
+    scale: 1.1
+    rotate: false
+
+messages:
+  no-permission: "%prefix%&cDafür hast du keine Rechte."
+  created: "%prefix%&aShop erstellt!"
+  updated: "%prefix%&aShop aktualisiert!"
+  removed: "%prefix%&aShop entfernt!"
+  must-sneak-remove: "%prefix%&7Zum Entfernen bitte &fducken&7."
+
+  invalid-sign: "%prefix%&cUngültiges Shop-Schild."
+  must-be-owner: "%prefix%&cLine 1 muss dein Name sein."
+  no-item-detected: "%prefix%&cKein Item in der Truhe gefunden (für '?')."
+  not-a-shop: "%prefix%&cDas ist kein Shop."
+  owner-cant-trade: "%prefix%&cDu kannst deinen eigenen Shop nicht benutzen."
+  not-enough-money: "%prefix%&cDu hast nicht genug Coins."
+  owner-not-enough-money: "%prefix%&cDer Shop-Besitzer hat nicht genug Coins."
+  not-enough-stock: "%prefix%&cDer Shop hat nicht genug Items."
+  not-enough-items: "%prefix%&cDu hast nicht genug Items zum Verkaufen."
+  chest-full: "%prefix%&cDie Shop-Truhe hat keinen Platz."
+  inventory-full: "%prefix%&cDein Inventar ist voll."
+
+  bought: "%prefix%&aGekauft: &f%amount%x %item% &7für &a%price%&7 Coins."
+  sold: "%prefix%&aVerkauft: &f%amount%x %item% &7für &a%price%&7 Coins."
+
+  owner-sold: "%prefix%&b%buyer% &7hat &f%amount%x %item% &7gekauft. &8(+&a%price%&8)"
+  owner-bought: "%prefix%&b%seller% &7hat &f%amount%x %item% &7verkauft. &8(-&c%price%&8)"
+
+  reloaded: "%prefix%&aConfig neu geladen."
+
+gui:
+  title: "&#2fd9ff&lSHOPINFO"
+  filler:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: "&7"
+
+  nexo-preview: true
+
+  item-lore-extra:
+    - "&7"
+    - "&8Klicke nur zum Anschauen."
+    - "&8Shift+Abbauen: &fOwner &7/ &cAdmin"
+
+economy:
+  plugin-name: "PlotropolisCoins"

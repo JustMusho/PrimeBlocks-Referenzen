@@ -1,0 +1,28 @@
+name: PlotropolisChestShop
+version: 1.0.0
+main: de.plotropolis.chestshop.PlotropolisChestShopPlugin
+api-version: '1.21'
+author: JustMusho
+softdepend: [Nexo, PlotropolisCoins]
+
+commands:
+  plotropolischestshop:
+    aliases: [pcs]
+    permission: plotropolis.chestshop.admin
+  shopinfo:
+    permission: plotropolis.chestshop.info
+
+permissions:
+  plotropolis.chestshop.create:
+    default: true
+  plotropolis.chestshop.use:
+    default: true
+  plotropolis.chestshop.info:
+    default: true
+  plotropolis.chestshop.hologram:
+    default: true
+
+  plotropolis.chestshop.admin:
+    default: op
+  plotropolis.chestshop.admin.reload:
+    default: op
