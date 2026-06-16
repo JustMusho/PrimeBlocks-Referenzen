@@ -1,0 +1,76 @@
+prefix: "&#2fd9ff&lP&#4fdfff&lL&#6fe5ff&lO&#8febff&lT&#aff1ff&lR&#cff7ff&lO&#effdff&lP&#ffffff&lO&#ffffff&lL&#ffffff&lI&#ffffff&lS &f&l» &7"
+
+settings:
+  crates-folder: "crates"
+  players-file: "players.yml"
+  update-holograms-every-ticks: 1200
+
+  gui:
+    preview-title: "&8Crate &7| %crate%"
+    edit-title: "&8Edit &7| %crate%"
+    itemedit-title: "&8Item bearbeiten"
+    opening-title: "&8Opening &7| %crate%"
+
+  sounds:
+    buy: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    open_tick: "UI_BUTTON_CLICK"
+    jackpot: "ENTITY_ENDER_DRAGON_DEATH"
+    jackpot-radius: 120
+
+border:
+  material: "GRAY_STAINED_GLASS_PANE"
+  name: "&7"
+
+messages:
+  no-permission: "%prefix%&cDafür hast du keine Rechte."
+  only-player: "%prefix%&cNur Spieler."
+  unknown-crate: "%prefix%&cDiese Crate gibt es nicht."
+  crate-created: "%prefix%&aCrate &f%crate% &aerstellt!"
+  crate-deleted: "%prefix%&cCrate &f%crate% &cgelöscht!"
+  crate-set: "%prefix%&aCrate &f%crate% &aauf Block gesetzt!"
+  crate-removed: "%prefix%&cCrate &f%crate% &centfernt!"
+  crate-given: "%prefix%&aDu hast &f%x% &a%crate% &aerhalten!"
+  not-enough-coins: "%prefix%&cDu hast nicht genug Kristalle! &7Kosten: &b%price%"
+  bought: "%prefix%&aGekauft: &f1x %crate% &7(&b-%price%&7)"
+  opening: "%prefix%&7Opening läuft..."
+  won-item: "%prefix%&aDu hast gewonnen: &f%item%"
+  won-command: "%prefix%&aBelohnung ausgeführt: &f%cmd%"
+
+broadcast:
+  enabled: true
+  mega: "%prefix%&#2fd9ff&lMEGA JACKPOT &7» &f%player% &7hat &f%item% &7gezogen!"
+  jackpot: "%prefix%&bJACKPOT &7» &f%player% &7hat &f%item% &7gezogen!"
+
+hologram:
+  enabled: true
+  y-offset: 1.35
+  lines:
+    - "%crate%"
+    - "&f[&b↔&f] ʟᴇꜰᴛ & ʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴢᴜʀ ᴘʀᴇᴠɪᴇᴡ"
+    - "&f[&b📦&f] ᴅᴜ ʜᴀѕᴛ &b%amount%&f ᴋɪѕᴛᴇɴ"
+    - "&7"
+    - "&b/ѕᴛᴏʀᴇ"
+
+rarities:
+  MEGA_JACKPOT:
+    display: "&#2fd9ff&lM&#4fdfff&lE&#6fe5ff&lG&#8febff&lA &#aff1ff&lJ&#cff7ff&lA&#effdff&lC&#ffffff&lK&#ffffff&lP&#ffffff&lO&#ffffff&lT"
+    chance: 1.5
+  JACKPOT:
+    display: "&bJACKPOT"
+    chance: 3.0
+  EPIC:
+    display: "&#A80BD6EPISCH"
+    chance: 6.0
+  LEGENDARY:
+    display: "&eLEGENDÄR"
+    chance: 12.0
+  RARE:
+    display: "&aSELTEN"
+    chance: 24.0
+  NORMAL:
+    display: "&8NORMAL"
+    chance: 48.0
+
+economy:
+  plotropoliscoins:
+    plugin-name: "PlotropolisCoins"

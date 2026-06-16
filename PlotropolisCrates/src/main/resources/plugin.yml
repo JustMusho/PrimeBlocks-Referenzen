@@ -1,0 +1,52 @@
+name: PlotropolisCrates
+version: 1.0.0
+main: de.plotropolis.crates.PlotropolisCratesPlugin
+api-version: "1.21"
+author: JustMusho
+
+softdepend:
+  - PlotropolisCoins
+
+commands:
+  pcrate:
+    description: Plotropolis Crates
+    usage: /pcrate
+    aliases: [pcrates, crates, crate]
+    permission: plotropoliscrates.use
+
+permissions:
+  plotropoliscrates.use:
+    default: true
+
+  plotropoliscrates.preview:
+    default: true
+  plotropoliscrates.buy:
+    default: true
+
+  plotropoliscrates.admin:
+    default: op
+    children:
+      plotropoliscrates.cmd.create: true
+      plotropoliscrates.cmd.delete: true
+      plotropoliscrates.cmd.edit: true
+      plotropoliscrates.cmd.list: true
+      plotropoliscrates.cmd.set: true
+      plotropoliscrates.cmd.remove: true
+      plotropoliscrates.cmd.give: true
+      plotropoliscrates.preview: true
+      plotropoliscrates.buy: true
+
+  plotropoliscrates.cmd.create:
+    default: op
+  plotropoliscrates.cmd.delete:
+    default: op
+  plotropoliscrates.cmd.edit:
+    default: op
+  plotropoliscrates.cmd.list:
+    default: op
+  plotropoliscrates.cmd.set:
+    default: op
+  plotropoliscrates.cmd.remove:
+    default: op
+  plotropoliscrates.cmd.give:
+    default: op
