@@ -1,0 +1,61 @@
+prefix: "&#2fd9ff&lP&#4fdfff&lL&#6fe5ff&lO&#8febff&lT&#aff1ff&lR&#cff7ff&lO&#effdff&lP&#ffffff&lO&#ffffff&lL&#ffffff&lI&#ffffff&lS &f&l» &7"
+use-hex-colors: true
+
+storage:
+  type: MYSQL
+
+mysql:
+  host: "51.75.69.56"
+  port: 3306
+  database: "Globalisierung"
+  username: "plotropolis_global"
+  password: "gmHDJ.mb4MG:ZgJ"
+  useSSL: false
+  poolSize: 10
+  table: "plotropolis_coins"
+
+currency:
+  money:
+    symbol: "€"
+    format-thousands: "."
+  kristalle:
+    symbol: "✦"
+    format-thousands: "."
+
+bank:
+  enabled: true
+  max-deposit-per-transaction: 1000000000
+  max-withdraw-per-transaction: 1000000000
+
+messages:
+  no-permission: "{prefix}&cDu hast keine Rechte dafür."
+  player-only: "{prefix}&cDieser Befehl ist nur für Spieler."
+  player-not-found: "{prefix}&cSpieler nicht gefunden."
+  invalid-number: "{prefix}&cBitte gib eine gültige Zahl an."
+  amount-must-be-positive: "{prefix}&cDer Betrag muss größer als 0 sein."
+
+  money-self: "{prefix}&7Dein Geld: &f{money}"
+  money-other: "{prefix}&7Geld von &f{player}&7: &f{money}"
+
+  bank-self: "{prefix}&7Deine Bank: &f{bank}"
+  bank-deposit-ok: "{prefix}&aEingezahlt: &f{amount} &7→ Bank: &f{bank}"
+  bank-withdraw-ok: "{prefix}&aAusgezahlt: &f{amount} &7→ Bank: &f{bank}"
+  bank-not-enough-wallet: "{prefix}&cDu hast nicht genug Geld auf der Hand."
+  bank-not-enough-bank: "{prefix}&cDu hast nicht genug Geld auf der Bank."
+
+  pay-usage: "{prefix}&7Nutze: &f/pay <spieler> <betrag>"
+  pay-success-sender: "{prefix}&aDu hast &f{amount}&a an &f{player}&a gesendet."
+  pay-success-target: "{prefix}&aDu hast &f{amount}&a von &f{player}&a erhalten."
+  pay-not-enough: "{prefix}&cDu hast nicht genug Geld."
+  pay-self: "{prefix}&cDu kannst dir nicht selbst Geld senden."
+
+  admin-added-money: "{prefix}&aGeld hinzugefügt: &f{amount} &7→ &f{player}"
+  admin-removed-money: "{prefix}&aGeld entfernt: &f{amount} &7→ &f{player}"
+  admin-set-money: "{prefix}&aGeld gesetzt: &f{amount} &7→ &f{player}"
+
+  admin-added-kristalle: "{prefix}&aKristalle hinzugefügt: &f{amount} &7→ &f{player}"
+  admin-removed-kristalle: "{prefix}&aKristalle entfernt: &f{amount} &7→ &f{player}"
+  admin-set-kristalle: "{prefix}&aKristalle gesetzt: &f{amount} &7→ &f{player}"
+
+placeholders:
+  enabled: true

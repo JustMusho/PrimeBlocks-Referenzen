@@ -1,0 +1,57 @@
+name: PlotropolisCoins
+version: 1.0.0
+main: de.plotropolis.coins.PlotropolisCoins
+api-version: 1.20
+author: JustMusho
+softdepend: [PlaceholderAPI]
+
+commands:
+  pay:
+    usage: /pay <spieler> <betrag>
+    description: Bezahle einem Spieler Geld.
+  money:
+    usage: /money [spieler]
+    description: Zeigt Geld von dir oder einem Spieler.
+  bank:
+    usage: /bank [einzahlen|auszahlen] [betrag]
+    description: Bank Konto (nur Geld).
+  addmoney:
+    usage: /addmoney <spieler> <betrag>
+    description: Admin - Geld hinzufügen.
+  removemoney:
+    usage: /removemoney <spieler> <betrag>
+    description: Admin - Geld entfernen.
+  setmoney:
+    usage: /setmoney <spieler> <betrag>
+    description: Admin - Geld setzen.
+  addkristalle:
+    usage: /addkristalle <spieler> <betrag>
+    description: Admin - Kristalle hinzufügen.
+  removekristalle:
+    usage: /removekristalle <spieler> <betrag>
+    description: Admin - Kristalle entfernen.
+  setkristalle:
+    usage: /setkristalle <spieler> <betrag>
+    description: Admin - Kristalle setzen.
+
+permissions:
+  plotropoliscoins.pay:
+    default: true
+  plotropoliscoins.money:
+    default: true
+  plotropoliscoins.bank:
+    default: true
+
+  plotropoliscoins.admin.addmoney:
+    default: op
+  plotropoliscoins.admin.removemoney:
+    default: op
+  plotropoliscoins.admin.setmoney:
+    default: op
+
+  plotropoliscoins.admin.addkristalle:
+    default: op
+  plotropoliscoins.admin.removekristalle:
+    default: op
+  plotropoliscoins.admin.setkristalle:
+    default: op

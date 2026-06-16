@@ -1,0 +1,16 @@
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\placeholders\PlotropolisPlaceholderExpansion.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\storage\DataStore.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\commands\MoneyCommand.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\commands\RemoveMoneyCommand.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\PlotropolisCoins.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\commands\AddKristalleCommand.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\commands\PayCommand.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\commands\SetMoneyCommand.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\util\MoneyFormat.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\commands\AddMoneyCommand.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\commands\RemoveKristalleCommand.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\commands\SetKristalleCommand.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\util\ColorUtil.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\commands\BankCommand.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\listener\CoinsJoinQuitListener.java
+D:\PlotropolisCoins\src\main\java\de\plotropolis\coins\storage\PlayerData.java
